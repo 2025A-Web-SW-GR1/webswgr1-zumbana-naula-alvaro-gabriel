@@ -4,9 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        /*Esto es CSS*/
+        /*Selector por id*/
+        #titulo-muy-especial{
+            margin: 1px;
+            margin-top: 2px;
+            margin-bottom: 3px;
+            margin-left: 4px;
+            margin-right: 5px;
+            margin: 10px 20px 30px 40px;
+            margin-left: 1px;
+            margin-left: 10000px;
+            margin-left: 5px;
+        }
+
+        /*Selector por nombre de etiqueta*/
+        h1, h2, h3, h4, h5, h6{
+            margin: 10px;
+            padding: 15px;
+            border: green 5px solid;
+            border-color: green;
+            border-width: 14px;
+            border-style: dashed;
+
+        }
+        /*Selector por clases (las clases de identificdn con punto)*/
+        .lista-ordenada-mayusculas{
+            list-style-type: upper-alpha;
+        }
+        .lista-ordenada-romana{
+            list-style-type: upper-roman;
+        }
+        /*Orden de jeraquia hijo ancla de li*/
+        li>a{
+            background-color: orange;
+        }
+        ul>li:hover{ /*Pseudo Clase*/
+            background-color: brown;
+        }
+        ul>li:first-child{ /*Pseudo Clase*/
+            background-color: red;
+        }
+        ul>li:nth-child(4){ /*Pseudo Clase*/
+            background-color: blue;
+        }
+    </style>
 </head>
 <body>
-    <h1>My First Heading</h1>
+    <h1 id="titulo-muy-especial" style="
+        color: white;
+        background-color: black;
+        ">
+        My First Heading</h1>
     <h2>My First Heading</h2>
     <h3>My First Heading</h3>
     <h4>My First Heading</h4>
@@ -14,5 +64,94 @@
     <h6 style = "font-size: 40px;">My First Heading</h6>
 
     <p>My first paragraph</p>
+
+    <a href="www.google.com" target="_blank">
+        GOOGLE
+    </a>
+    <ul><!--  Un-ordered list-->
+        <!-- li*(numero de item) -->
+         <li><a href="/index.html">
+            HOME
+            </a>
+        </li>
+         <li>
+            <a href="/a-tablas-anclas.html">
+                TABLAS Y ANCLAS
+            </a>
+         </li>
+
+         <li><a href="/index.html">
+            HOME
+            </a>
+        </li>
+         <li>
+            <a href="/a-tablas-anclas.html">
+                TABLAS Y ANCLAS
+            </a>
+         </li>
+    </ul>
+    
+    <ol class="lista-ordenada-mayusculas">
+        <li>Lunes</li>
+            <ol class="lista-ordenada-romana">
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+        
+            </ol>
+        <li>Martes</li>
+        <li>Miercoles</li>
+    </ol>
+    
+
+
+    <p>Links internos</p>
+    <ul>
+        <li><a href="#parrafo1">Ir parrafo 1</a></li>
+        <li><a href="#parrafo2">Ir parrafo 2</a></li>
+
+    </ul>
+
+    <p id="parrafo1">Parrafo 1</p>
+    <br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br>
+    <p id="parrafo2">Parrafo 2</p>
+    <br><br><br><br><br><br><br><br><br><br>
+
+    <h2>Imagenes</h2>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKenZLVvdeUZiYiS9BtFqqGolInkCAT5WSSA&s" alt="Buho de colores">
+    
+    <table>
+
+        <tr>    <!--Table row-->
+            <th>
+                Nombre
+            </th>    <!--Table header-->
+            <th>
+                Apellido
+            </th>
+            <th>Nota</th>
+        </tr>
+
+        <tr>
+            <td>    <!--Table detail-->
+                Alvaro
+            </td>
+            <td>
+                Zumbana
+            </td>
+            <td>
+                10
+            </td>
+        </tr>
+
+        <tr>
+            <td>Wendy</td>
+            <td>Sulca</td>
+            <td>5</td>
+        </tr>
+
+    </table>
+
 </body>
 </html>
