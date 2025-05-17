@@ -1,0 +1,10 @@
+/*Minificado _ https://www.toptal.com/developers/cssminifier
+bunding y minificado*/
+/*Elimina comentarios y codigo repetido y pone todo en una sola linea*/
+
+h1{border:1px solid brown;color:#000;background-color:orange}
+
+/*Estado despues de declarar el selector en bootstrap.html*/
+.btn.btn-warning:hover{
+    background-color: greenyellow;
+}
