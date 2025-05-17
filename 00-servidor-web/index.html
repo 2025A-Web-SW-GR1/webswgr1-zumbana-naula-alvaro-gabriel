@@ -36,6 +36,9 @@
         .lista-ordenada-romana{
             list-style-type: upper-roman;
         }
+        .lista-ordenada-greek{
+            list-style-type: lower-greek;
+        }
         /*Orden de jeraquia hijo ancla de li*/
         li>a{
             background-color: orange;
@@ -49,6 +52,7 @@
         ul>li:nth-child(4){ /*Pseudo Clase*/
             background-color: blue;
         }
+    
     </style>
 </head>
 <body>
@@ -91,6 +95,17 @@
          </li>
     </ul>
     
+
+    <ol class="lista-ordenada-greek">
+        <li>2</li>
+        <li>4</li>
+        <li>6</li>
+    </ol>
+
+
+
+
+
     <ol class="lista-ordenada-mayusculas">
         <li>Lunes</li>
             <ol class="lista-ordenada-romana">

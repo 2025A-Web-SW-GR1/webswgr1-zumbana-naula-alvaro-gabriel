@@ -1,0 +1,31 @@
+/* styles.css */
+
+/* Fondo general oscuro y color de texto blanco */
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+/* Estilos para los enlaces del menú de navegación */
+.nav-link {
+  font-weight: 500; /* Negrita media */
+  transition: color 0.3s; /* Suaviza el cambio de color */
+}
+
+/* Color al pasar el mouse por los enlaces del menú */
+.nav-link:hover {
+  color: #b0b0b0;
+}
+
+/* Estilo del botón "Suscríbete ahora" */
+.btn-primary {
+  background-color: #6d4aff;
+  border-color: #6d4aff;
+}
+
+/* Efecto hover para el botón "Suscríbete ahora" */
+.btn-primary:hover {
+  background-color: #5a3de6;
+  border-color: #5a3de6;
+}
