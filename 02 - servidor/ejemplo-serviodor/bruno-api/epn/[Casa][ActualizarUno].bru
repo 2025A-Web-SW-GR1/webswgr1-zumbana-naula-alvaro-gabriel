@@ -1,0 +1,21 @@
+meta {
+  name: [Casa][ActualizarUno]
+  type: http
+  seq: 4
+}
+
+put {
+  url: http://localhost:3000/api/casa/:id
+  body: json
+  auth: inherit
+}
+
+params:path {
+  id: 1
+}
+
+body:json {
+  {
+    "nombre": "casa actualizada"
+  }
+}

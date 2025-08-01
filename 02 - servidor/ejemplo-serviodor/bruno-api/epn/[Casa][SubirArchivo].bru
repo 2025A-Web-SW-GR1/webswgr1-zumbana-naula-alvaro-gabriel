@@ -1,0 +1,19 @@
+meta {
+  name: [Casa][SubirArchivo]
+  type: http
+  seq: 6
+}
+
+post {
+  url: http://localhost:3000/api/casa/uploadFile/1
+  body: multipartForm
+  auth: inherit
+}
+
+body:multipart-form {
+  archivoASubir: @file(C:\Users\oshit\Downloads\I9-FRM-Flexibilities-OMBReview-08012023-ENG-AF.pdf)
+}
+
+body:file {
+  file: @file(C:\Users\oshit\Downloads\I9-FRM-Flexibilities-OMBReview-08012023-ENG-AF.pdf) @contentType(application/pdf)
+}
