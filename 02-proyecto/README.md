@@ -13,6 +13,14 @@
 Este proyecto consiste en una **página web responsive** diseñada completamente con **HTML5 y CSS3**, sin librerías externas. El tema se centra en el desarrollo de **aplicaciones web modernas**, simulando un sitio de una empresa de tecnología. Incluye secciones informativas, diseño adaptable y código limpio, ideal como ejemplo académico.
 
 ---
+## Vistas
+
+### Sección 1
+![Inicio](./assets/ss1.png)
+
+### Sección 2
+![Responsive](./assets/ss2.png)
+
 
 ## Autor
 
